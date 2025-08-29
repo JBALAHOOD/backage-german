@@ -1,0 +1,280 @@
+{
+  "additional_airlines": {
+    "american_airlines": {
+      "name": "American Airlines",
+      "code": "AA",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/American-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$30-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": [
+        "AAdvantage program",
+        "Mobile check-in",
+        "Admirals Club access"
+      ]
+    },
+    "delta_airlines": {
+      "name": "Delta Air Lines",
+      "code": "DL",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Delta-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 35 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$30-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": [
+        "SkyMiles program",
+        "Delta Sky Club",
+        "Mobile boarding passes"
+      ]
+    },
+    "united_airlines": {
+      "name": "United Airlines",
+      "code": "UA",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/United-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 35 x 22 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$30-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": [
+        "MileagePlus program",
+        "United Club access",
+        "Star Alliance benefits"
+      ]
+    },
+    "southwest_airlines": {
+      "name": "Southwest Airlines",
+      "code": "WN",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Southwest-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "61 x 41 x 28 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Free first 2 bags",
+          "maxPieces": 2
+        }
+      },
+      "tips": [
+        "Free checked bags",
+        "Rapid Rewards program",
+        "No change fees"
+      ]
+    },
+    "jetblue_airways": {
+      "name": "JetBlue Airways",
+      "code": "B6",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/JetBlue-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$35-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": [
+        "TrueBlue program",
+        "Free WiFi",
+        "Live TV entertainment"
+      ]
+    },
+    "alaska_airlines": {
+      "name": "Alaska Airlines",
+      "code": "AS",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Alaska-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$30-50",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": [
+        "Mileage Plan program",
+        "West Coast focus",
+        "Oneworld alliance"
+      ]
+    },
+    "spirit_airlines": {
+      "name": "Spirit Airlines",
+      "code": "NK",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Spirit-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 46 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Fee applies for carry-on"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "18kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$35-75",
+          "maxPieces": 1
+        }
+      },
+      "tips": [
+        "Ultra-low-cost carrier",
+        "Free Spirit program",
+        "Pay for extras"
+      ]
+    },
+    "frontier_airlines": {
+      "name": "Frontier Airlines",
+      "code": "F9",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Frontier-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "16kg",
+        "maxDimensions": "61 x 41 x 28 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Fee applies for carry-on"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$30-60",
+          "maxPieces": 1
+        }
+      },
+      "tips": [
+        "Frontier Miles program",
+        "Animal-themed planes",
+        "Bundle options available"
+      ]
+    },
+    "allegiant_air": {
+      "name": "Allegiant Air",
+      "code": "G4",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Allegiant-Air-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Fee applies for carry-on"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$25-50",
+          "maxPieces": 1
+        }
+      },
+      "tips": [
+        "myAllegiant rewards",
+        "Leisure destinations",
+        "Point-to-point service"
+      ]
+    },
+    "hawaiian_airlines": {
+      "name": "Hawaiian Airlines",
+      "code": "HA",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Hawaiian-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "11kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$25-30",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": [
+        "HawaiianMiles program",
+        "Island hopping",
+        "Hawaiian hospitality"
+      ]
+    }
+  }
+}

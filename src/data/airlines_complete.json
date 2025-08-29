@@ -1,0 +1,1412 @@
+{
+  "airlines": {
+    "lufthansa": {
+      "name": "Lufthansa",
+      "code": "LH",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Lufthansa-Logo.png",
+      "handLuggage": {
+        "maxWeight": "8kg",
+        "maxDimensions": "55 x 40 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus small personal item (40 x 30 x 10 cm)"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€25-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Online einchecken, um Zeit zu sparen", "Wiegen Sie Ihr Gepäck vor der Abreise"]
+    },
+    "ryanair": {
+      "name": "Ryanair",
+      "code": "FR",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Ryanair-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "55 x 40 x 20 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Priority boarding required for cabin bag"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€15-50",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["Gepäck online buchen für günstigere Preise", "Online-Check-in ist obligatorisch"]
+    },
+    "easyjet": {
+      "name": "easyJet",
+      "code": "U2",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/EasyJet-Logo.png",
+      "handLuggage": {
+        "maxWeight": "No limit",
+        "maxDimensions": "56 x 45 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus small personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "£15-45",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["easyJet Plus Mitgliedschaftsvorteile", "Mobile Bordkarten"]
+    },
+    "emirates": {
+      "name": "Emirates",
+      "code": "EK",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Emirates-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "55 x 38 x 22 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "30kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "40kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Skywards Treueprogramm", "Dubai Hub-Konnektivität"]
+    },
+    "british_airways": {
+      "name": "British Airways",
+      "code": "BA",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/British-Airways-Logo.png",
+      "handLuggage": {
+        "maxWeight": "23kg",
+        "maxDimensions": "56 x 45 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "£35-65",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Executive Club Vorteile", "Oneworld Allianz"]
+    },
+    "klm": {
+      "name": "KLM",
+      "code": "KL",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/KLM-Logo.png",
+      "handLuggage": {
+        "maxWeight": "12kg",
+        "maxDimensions": "55 x 35 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€35-75",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Flying Blue Treueprogramm", "Amsterdam Hub"]
+    },
+    "air_france": {
+      "name": "Air France",
+      "code": "AF",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Air-France-Logo.png",
+      "handLuggage": {
+        "maxWeight": "12kg",
+        "maxDimensions": "55 x 35 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€35-75",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Flying Blue Treueprogramm", "Paris Hub"]
+    },
+    "turkish_airlines": {
+      "name": "Turkish Airlines",
+      "code": "TK",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Turkish-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "8kg",
+        "maxDimensions": "55 x 40 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "30kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Miles&Smiles Programm", "Istanbul Hub"]
+    },
+    "qatar_airways": {
+      "name": "Qatar Airways",
+      "code": "QR",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Qatar-Airways-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "55 x 37 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "30kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "40kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Privilege Club Vorteile", "Doha Hub"]
+    },
+    "singapore_airlines": {
+      "name": "Singapore Airlines",
+      "code": "SQ",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Singapore-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "30kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "40kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["KrisFlyer Programm", "Singapur Hub"]
+    },
+    "cathay_pacific": {
+      "name": "Cathay Pacific",
+      "code": "CX",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Cathay-Pacific-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "30kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "40kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Asia Miles Programm", "Hongkong Hub"]
+    },
+    "american_airlines": {
+      "name": "American Airlines",
+      "code": "AA",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/American-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$30-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["AAdvantage Programm", "Admirals Club Zugang"]
+    },
+    "delta_airlines": {
+      "name": "Delta Air Lines",
+      "code": "DL",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Delta-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 35 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$30-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["SkyMiles Programm", "Delta Sky Club"]
+    },
+    "united_airlines": {
+      "name": "United Airlines",
+      "code": "UA",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/United-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 35 x 22 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$30-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["MileagePlus Programm", "United Club Zugang"]
+    },
+    "southwest_airlines": {
+      "name": "Southwest Airlines",
+      "code": "WN",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Southwest-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "61 x 41 x 28 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Free first 2 bags",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Kostenlose Aufgabegepäck", "Rapid Rewards Programm"]
+    },
+    "jetblue_airways": {
+      "name": "JetBlue Airways",
+      "code": "B6",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/JetBlue-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$35-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["TrueBlue Programm", "Kostenloses WLAN"]
+    },
+    "alaska_airlines": {
+      "name": "Alaska Airlines",
+      "code": "AS",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Alaska-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$30-50",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Mileage Plan Programm", "Oneworld Allianz"]
+    },
+    "spirit_airlines": {
+      "name": "Spirit Airlines",
+      "code": "NK",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Spirit-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 46 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Fee applies for carry-on"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "18kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$35-75",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["Ultra-Billigfluggesellschaft", "Free Spirit Programm"]
+    },
+    "frontier_airlines": {
+      "name": "Frontier Airlines",
+      "code": "F9",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Frontier-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "16kg",
+        "maxDimensions": "61 x 41 x 28 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Fee applies for carry-on"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$30-60",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["Frontier Miles Programm", "Tiermotiv-Flugzeuge"]
+    },
+    "allegiant_air": {
+      "name": "Allegiant Air",
+      "code": "G4",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Allegiant-Air-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Fee applies for carry-on"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$25-50",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["myAllegiant Belohnungen", "Freizeitziele"]
+    },
+    "hawaiian_airlines": {
+      "name": "Hawaiian Airlines",
+      "code": "HA",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Hawaiian-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "11kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "$25-30",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["HawaiianMiles Programm", "Inselhopping"]
+    },
+    "virgin_atlantic": {
+      "name": "Virgin Atlantic",
+      "code": "VS",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Virgin-Atlantic-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "£35-65",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Flying Club Programm", "Virgin Erlebnis"]
+    },
+    "iberia": {
+      "name": "Iberia",
+      "code": "IB",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Iberia-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 40 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€25-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Iberia Plus Programm", "Madrid Hub"]
+    },
+    "alitalia": {
+      "name": "Alitalia",
+      "code": "AZ",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Alitalia-Logo.png",
+      "handLuggage": {
+        "maxWeight": "8kg",
+        "maxDimensions": "55 x 35 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€25-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["MilleMiglia Programm", "Rom Hub"]
+    },
+    "swiss_international": {
+      "name": "Swiss International Air Lines",
+      "code": "LX",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Swiss-Logo.png",
+      "handLuggage": {
+        "maxWeight": "8kg",
+        "maxDimensions": "55 x 40 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€25-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Miles & More Programm", "Zürich Hub"]
+    },
+    "austrian_airlines": {
+      "name": "Austrian Airlines",
+      "code": "OS",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Austrian-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "8kg",
+        "maxDimensions": "55 x 40 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€25-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Miles & More Programm", "Wien Hub"]
+    },
+    "brussels_airlines": {
+      "name": "Brussels Airlines",
+      "code": "SN",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Brussels-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "8kg",
+        "maxDimensions": "55 x 40 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€25-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Miles & More Programm", "Brüssel Hub"]
+    },
+    "tap_air_portugal": {
+      "name": "TAP Air Portugal",
+      "code": "TP",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/TAP-Air-Portugal-Logo.png",
+      "handLuggage": {
+        "maxWeight": "8kg",
+        "maxDimensions": "55 x 40 x 20 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€25-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["TAP Miles&Go Programm", "Lissabon Hub"]
+    },
+    "sas_scandinavian": {
+      "name": "SAS Scandinavian Airlines",
+      "code": "SK",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/SAS-Logo.png",
+      "handLuggage": {
+        "maxWeight": "8kg",
+        "maxDimensions": "55 x 40 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€35-75",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["EuroBonus Programm", "Star Alliance"]
+    },
+    "finnair": {
+      "name": "Finnair",
+      "code": "AY",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Finnair-Logo.png",
+      "handLuggage": {
+        "maxWeight": "8kg",
+        "maxDimensions": "56 x 45 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€35-75",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Finnair Plus Programm", "Helsinki Hub"]
+    },
+    "norwegian_air": {
+      "name": "Norwegian Air",
+      "code": "DY",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Norwegian-Air-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "55 x 40 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€15-50",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["Norwegian Reward Programm", "Billig-Langstrecke"]
+    },
+    "wizz_air": {
+      "name": "Wizz Air",
+      "code": "W6",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Wizz-Air-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 45 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€15-50",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["Wizz Priority", "Osteuropäischer Fokus"]
+    },
+    "vueling": {
+      "name": "Vueling",
+      "code": "VY",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Vueling-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "55 x 40 x 20 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€15-50",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["Punto Programm", "Barcelona Hub"]
+    },
+    "pegasus_airlines": {
+      "name": "Pegasus Airlines",
+      "code": "PC",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Pegasus-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "8kg",
+        "maxDimensions": "55 x 40 x 20 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "€15-40",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["BolBol Programm", "Türkische Billigfluggesellschaft"]
+    },
+    "aeroflot": {
+      "name": "Aeroflot",
+      "code": "SU",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Aeroflot-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "55 x 40 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Aeroflot Bonus Programm", "Moskau Hub"]
+    },
+    "air_canada": {
+      "name": "Air Canada",
+      "code": "AC",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Air-Canada-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 23 x 56 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "CAD 30-70",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Aeroplan Programm", "Star Alliance"]
+    },
+    "westjet": {
+      "name": "WestJet",
+      "code": "WS",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/WestJet-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "CAD 30-50",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["WestJet Rewards Programm", "Kanadische Fluggesellschaft"]
+    },
+    "air_new_zealand": {
+      "name": "Air New Zealand",
+      "code": "NZ",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Air-New-Zealand-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "NZD 30-60",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Airpoints Programm", "Star Alliance"]
+    },
+    "qantas": {
+      "name": "Qantas",
+      "code": "QF",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Qantas-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "AUD 35-65",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Qantas Frequent Flyer", "Oneworld Allianz"]
+    },
+    "virgin_australia": {
+      "name": "Virgin Australia",
+      "code": "VA",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Virgin-Australia-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "AUD 35-65",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Velocity Programm", "Australische Inlandsflüge"]
+    },
+    "jetstar": {
+      "name": "Jetstar",
+      "code": "JQ",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Jetstar-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "AUD 25-55",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["Jetstar Club Programm", "Billigfluggesellschaft"]
+    },
+    "tigerair": {
+      "name": "Tigerair",
+      "code": "TR",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Tigerair-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "54 x 38 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "SGD 25-50",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["Budget-Fluggesellschaft", "Südostasien-Fokus"]
+    },
+    "scoot": {
+      "name": "Scoot",
+      "code": "TZ",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Scoot-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "54 x 38 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "SGD 30-60",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["Singapore Airlines Tochtergesellschaft", "Billig-Langstrecke"]
+    },
+    "cebu_pacific": {
+      "name": "Cebu Pacific",
+      "code": "5J",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Cebu-Pacific-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "PHP 1000-2500",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["GetGo Programm", "Philippinische Fluggesellschaft"]
+    },
+    "airasia": {
+      "name": "AirAsia",
+      "code": "AK",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/AirAsia-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "MYR 35-80",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["BIG Loyalty Programm", "Jetzt kann jeder fliegen"]
+    },
+    "malaysia_airlines": {
+      "name": "Malaysia Airlines",
+      "code": "MH",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Malaysia-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "30kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "40kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Enrich Programm", "Oneworld Allianz"]
+    },
+    "thai_airways": {
+      "name": "Thai Airways",
+      "code": "TG",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Thai-Airways-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "30kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "40kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Royal Orchid Plus", "Star Alliance"]
+    },
+    "vietnam_airlines": {
+      "name": "Vietnam Airlines",
+      "code": "VN",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Vietnam-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Golden Lotus Plus", "SkyTeam Allianz"]
+    },
+    "jetstar_asia": {
+      "name": "Jetstar Asia",
+      "code": "3K",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Jetstar-Asia-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "SGD 25-55",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["Club Jetstar Programm", "Asiatische Billigfluggesellschaft"]
+    },
+    "vietjet_air": {
+      "name": "VietJet Air",
+      "code": "VJ",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/VietJet-Air-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "USD 15-40",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["SkyJoy Programm", "Vietnamesische Billigfluggesellschaft"]
+    },
+    "nok_air": {
+      "name": "Nok Air",
+      "code": "DD",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Nok-Air-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "20kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "THB 400-800",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["Nok Fan Club", "Thailändische Inlandsflüge"]
+    },
+    "bangkok_airways": {
+      "name": "Bangkok Airways",
+      "code": "PG",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Bangkok-Airways-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "56 x 36 x 23 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "30kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "40kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["FlyerBonus Programm", "Boutique-Fluggesellschaft"]
+    },
+    "indigo": {
+      "name": "IndiGo",
+      "code": "6E",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/IndiGo-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "55 x 35 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "15kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "INR 1500-3000",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["6E Rewards Programm", "Indische Billigfluggesellschaft"]
+    },
+    "spicejet": {
+      "name": "SpiceJet",
+      "code": "SG",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/SpiceJet-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "55 x 35 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "15kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "INR 1200-2500",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["SpiceClub Programm", "Indische Budget-Fluggesellschaft"]
+    },
+    "air_india": {
+      "name": "Air India",
+      "code": "AI",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Air-India-Logo.png",
+      "handLuggage": {
+        "maxWeight": "8kg",
+        "maxDimensions": "55 x 35 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "25kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "35kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Flying Returns Programm", "Star Alliance"]
+    },
+    "vistara": {
+      "name": "Vistara",
+      "code": "UK",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Vistara-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "55 x 35 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "15kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "INR 1800-3500",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "30kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["Club Vistara Programm", "Full-Service-Fluggesellschaft"]
+    },
+    "goair": {
+      "name": "GoAir",
+      "code": "G8",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/GoAir-Logo.png",
+      "handLuggage": {
+        "maxWeight": "7kg",
+        "maxDimensions": "55 x 35 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "15kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "INR 1500-3000",
+          "maxPieces": 1
+        }
+      },
+      "tips": ["GoRewards Programm", "Indische Billigfluggesellschaft"]
+    },
+    "japan_airlines": {
+      "name": "Japan Airlines",
+      "code": "JL",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/Japan-Airlines-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "55 x 40 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["JAL Mileage Bank", "Oneworld Allianz"]
+    },
+    "ana": {
+      "name": "All Nippon Airways",
+      "code": "NH",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/03/ANA-Logo.png",
+      "handLuggage": {
+        "maxWeight": "10kg",
+        "maxDimensions": "55 x 40 x 25 cm",
+        "maxPieces": 1,
+        "additionalInfo": "Plus personal item"
+      },
+      "checkedBaggage": {
+        "economy": {
+          "maxWeight": "23kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 1
+        },
+        "business": {
+          "maxWeight": "32kg",
+          "maxDimensions": "158cm (L+W+H)",
+          "price": "Included",
+          "maxPieces": 2
+        }
+      },
+      "tips": ["ANA Mileage Club", "Star Alliance"]
+    }
+  }
+}

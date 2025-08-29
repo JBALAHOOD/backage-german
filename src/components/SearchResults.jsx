@@ -1,19 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Plane, ArrowLeft } from 'lucide-react';
+import { searchAirlines, getAirlineCount } from '../data/airlines';
 
-// Mock airline data - in a real app this would come from an API
-const mockAirlines = [
-  { id: 1, airline_name: 'Lufthansa', airline_name_english: 'Lufthansa', airline_code: 'LH' },
-  { id: 2, airline_name: 'Emirates', airline_name_english: 'Emirates', airline_code: 'EK' },
-  { id: 3, airline_name: 'Ryanair', airline_name_english: 'Ryanair', airline_code: 'FR' },
-  { id: 4, airline_name: 'British Airways', airline_name_english: 'British Airways', airline_code: 'BA' },
-  { id: 5, airline_name: 'KLM', airline_name_english: 'KLM Royal Dutch Airlines', airline_code: 'KL' },
-  { id: 6, airline_name: 'Air France', airline_name_english: 'Air France', airline_code: 'AF' },
-  { id: 7, airline_name: 'Turkish Airlines', airline_name_english: 'Turkish Airlines', airline_code: 'TK' },
-  { id: 8, airline_name: 'Qatar Airways', airline_name_english: 'Qatar Airways', airline_code: 'QR' },
-  { id: 9, airline_name: 'Swiss International Air Lines', airline_name_english: 'Swiss', airline_code: 'LX' },
-  { id: 10, airline_name: 'Austrian Airlines', airline_name_english: 'Austrian Airlines', airline_code: 'OS' }
-];
 
 export default function SearchResults({ query, onSelectAirline }) {
   const [results, setResults] = useState([]);
@@ -21,24 +9,30 @@ export default function SearchResults({ query, onSelectAirline }) {
 
   useEffect(() => {
     if (query && query.length >= 2) {
-      searchAirlines(query);
+      searchAirlinesData(query);
     } else {
       setResults([]);
     }
   }, [query]);
 
-  const searchAirlines = async (searchTerm) => {
+  const searchAirlinesData = async (searchTerm) => {
     setIsLoading(true);
     try {
       // Simulate API delay
       await new Promise(resolve => setTimeout(resolve, 300));
       
-      const filtered = mockAirlines.filter(airline =>
-        airline.airline_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        airline.airline_name_english.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        (airline.airline_code && airline.airline_code.toLowerCase().includes(searchTerm.toLowerCase()))
-      );
-      setResults(filtered.slice(0, 5));
+      const searchResults = searchAirlines(searchTerm);
+      // Transform results to match expected format
+      const transformedResults = searchResults.map((airline, index) => ({
+        id: airline.iata_code || `airline-${index}`,
+        airline_name: airline.name,
+        airline_name_english: airline.name,
+        airline_code: airline.iata_code,
+        country: airline.country,
+        handLuggage: airline.handLuggage,
+        checkedBaggage: airline.checkedBaggage
+      }));
+      setResults(transformedResults.slice(0, 8)); // Show more results with expanded database
     } catch (error) {
       console.error('Fehler beim Suchen der Airlines:', error);
     }
@@ -77,7 +71,7 @@ export default function SearchResults({ query, onSelectAirline }) {
                     {airline.airline_name}
                   </h3>
                   <p className="text-sm text-gray-600">
-                    {airline.airline_name_english} {airline.airline_code && `(${airline.airline_code})`}
+                    {airline.country} {airline.airline_code && `• ${airline.airline_code}`}
                   </p>
                 </div>
                 <ArrowLeft className="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors transform rotate-180" />

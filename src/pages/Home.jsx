@@ -2,15 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { Search, Plane, Shield, Clock, Users, Star, CheckCircle, ArrowRight } from 'lucide-react';
 import SearchResults from '../components/SearchResults';
 import BaggageResults from '../components/BaggageResults';
+import Blog from '../components/Blog';
+import { useTranslation } from '../components/LanguageSwitcher';
 
-export default function Home() {
+export default function Home({ onNavigateToTravelTips, onNavigateToPackingHacks }) {
+  const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedAirline, setSelectedAirline] = useState(null);
   const [showSearch, setShowSearch] = useState(false);
 
   useEffect(() => {
     // Set SEO meta tags
-    document.title = 'Handgepäck Prüfer - Gepäckbestimmungen aller Airlines';
+    // Title is now handled by Layout component
     document.querySelector('meta[name="description"]')?.setAttribute('content', 
       'Überprüfen Sie die Handgepäck- und Gepäckbestimmungen von über 100 Fluggesellschaften. Schnell, zuverlässig und immer aktuell.');
     document.querySelector('meta[name="keywords"]')?.setAttribute('content', 
@@ -104,33 +107,33 @@ export default function Home() {
               <Plane className="w-10 h-10 text-white" />
             </div>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black gradient-text mb-6 leading-tight">
-              Handgepäck Prüfer
+            <h1 className="text-3xl md:text-6xl lg:text-7xl font-black gradient-text mb-6 leading-tight">
+              {t('hero.title')}
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Überprüfen Sie Gepäckbestimmungen aller Airlines in Sekunden
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed px-4">
+              {t('hero.subtitle')}
             </p>
             
-            <div className="max-w-2xl mx-auto mb-12">
-              <div className="glass-effect rounded-2xl p-2 shadow-xl hover-lift">
-                <div className="flex flex-col sm:flex-row gap-2">
+            <div className="max-w-2xl mx-auto mb-8 md:mb-12 px-4">
+              <div className="mobile-card md:glass-effect rounded-2xl p-2 shadow-xl hover-lift">
+                <div className="flex flex-col gap-3 md:gap-2">
                   <div className="flex-1 relative">
                     <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                     <input
                       type="text"
-                      placeholder="Airline suchen (z.B. Lufthansa, Emirates, Turkish Airlines)"
+                      placeholder={t('hero.searchPlaceholder')}
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       onKeyPress={handleKeyPress}
-                      className="pl-12 pr-6 h-14 w-full text-lg border-0 bg-transparent focus:ring-0 focus:outline-none placeholder:text-gray-500 rounded-xl"
+                      className="mobile-search pl-12 pr-6 h-14 w-full text-base md:text-lg border-0 bg-transparent focus:ring-0 focus:outline-none placeholder:text-gray-500 rounded-xl"
                     />
                   </div>
                   <button
                     onClick={handleSearch}
-                    className="w-full sm:w-auto h-14 px-8 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white font-bold rounded-xl shadow-lg hover-lift transition-all duration-200 flex items-center justify-center gap-2"
+                    className="mobile-button touch-friendly h-14 px-6 md:px-8 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white font-bold rounded-xl shadow-lg hover-lift transition-all duration-200 flex items-center justify-center gap-2"
                   >
-                    Jetzt prüfen
+                    {t('hero.searchButton')}
                     <ArrowRight className="w-5 h-5" />
                   </button>
                 </div>
@@ -143,48 +146,56 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-20 bg-white/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 slide-in">
-            <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-6">
-              Warum Handgepäck Prüfer wählen?
+          <div className="text-center mb-12 md:mb-16 slide-in px-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold gradient-text mb-4 md:mb-6">
+              {t('features.title')}
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Die optimale Lösung für die Überprüfung von Gepäckbestimmungen vor der Reise
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+              {t('features.subtitle')}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="glass-effect rounded-2xl p-8 text-center hover-lift slide-in">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <CheckCircle className="w-8 h-8 text-white" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 px-4">
+            <div className="mobile-card md:glass-effect rounded-2xl p-6 md:p-8 text-center hover-lift slide-in">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
+                <CheckCircle className="w-6 h-6 md:w-8 md:h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">100% Genauigkeit</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Aktuelle und geprüfte Informationen aus offiziellen Airline-Quellen
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">{t('features.accuracy.title')}</h3>
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                {t('features.accuracy.desc')}
               </p>
             </div>
 
-            <div className="glass-effect rounded-2xl p-8 text-center hover-lift slide-in">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <Users className="w-8 h-8 text-white" />
+            <div className="mobile-card md:glass-effect rounded-2xl p-6 md:p-8 text-center hover-lift slide-in">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
+                <Users className="w-6 h-6 md:w-8 md:h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Einfache Bedienung</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Benutzerfreundliche und schnelle Oberfläche für alle benötigten Informationen
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">{t('features.ease.title')}</h3>
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                {t('features.ease.desc')}
               </p>
             </div>
 
-            <div className="glass-effect rounded-2xl p-8 text-center hover-lift slide-in">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <Users className="w-8 h-8 text-white" />
+            <div className="mobile-card md:glass-effect rounded-2xl p-6 md:p-8 text-center hover-lift slide-in">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
+                <Users className="w-6 h-6 md:w-8 md:h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Umfassende Abdeckung</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Alle nationalen und internationalen Airlines an einem Ort
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 md:mb-4">{t('features.coverage.title')}</h3>
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                {t('features.coverage.desc')}
               </p>
             </div>
           </div>
+
+
         </div>
       </section>
+
+      {/* Blog Section */}
+      <Blog 
+          onNavigateToTravelTips={onNavigateToTravelTips}
+          onNavigateToPackingHacks={onNavigateToPackingHacks}
+        />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 relative overflow-hidden">

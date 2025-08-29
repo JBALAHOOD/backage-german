@@ -1,4 +1,4 @@
-import { Search, Plane, Shield, Clock } from 'lucide-react'
+import { Search, Plane, Shield, Clock, DollarSign, Timer, Heart, CheckCircle } from 'lucide-react'
 
 export default function HeroSection({ onStartSearch }) {
   return (
@@ -65,34 +65,54 @@ export default function HeroSection({ onStartSearch }) {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-16 glass-effect rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">
+        <div className="mt-16 card-modern">
+          <h2 className="text-2xl font-bold gradient-text mb-6">
             Warum Gepäckbestimmungen prüfen?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-            <div>
-              <h4 className="font-semibold text-slate-700 mb-2">💰 Kosten sparen</h4>
-              <p className="text-slate-600 text-sm">
-                Vermeiden Sie teure Nachzahlungen am Flughafen durch Übergewicht oder falsche Maße.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+            <div className="flex items-start space-x-4">
+              <div className="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <DollarSign className="w-5 h-5 text-emerald-600" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-800 mb-2">Kosten sparen</h4>
+                <p className="text-slate-600 text-sm">
+                  Vermeiden Sie teure Nachzahlungen am Flughafen durch Übergewicht oder falsche Maße.
+                </p>
+              </div>
             </div>
-            <div>
-              <h4 className="font-semibold text-slate-700 mb-2">⏰ Zeit sparen</h4>
-              <p className="text-slate-600 text-sm">
-                Keine langen Warteschlangen oder Umpackaktionen am Check-in-Schalter.
-              </p>
+            <div className="flex items-start space-x-4">
+              <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Timer className="w-5 h-5 text-blue-600" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-800 mb-2">Zeit sparen</h4>
+                <p className="text-slate-600 text-sm">
+                  Keine langen Warteschlangen oder Umpackaktionen am Check-in-Schalter.
+                </p>
+              </div>
             </div>
-            <div>
-              <h4 className="font-semibold text-slate-700 mb-2">✈️ Stressfrei reisen</h4>
-              <p className="text-slate-600 text-sm">
-                Entspannt in den Urlaub starten ohne böse Überraschungen.
-              </p>
+            <div className="flex items-start space-x-4">
+              <div className="w-10 h-10 bg-rose-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Heart className="w-5 h-5 text-rose-600" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-800 mb-2">Stressfrei reisen</h4>
+                <p className="text-slate-600 text-sm">
+                  Entspannt in den Urlaub starten ohne böse Überraschungen.
+                </p>
+              </div>
             </div>
-            <div>
-              <h4 className="font-semibold text-slate-700 mb-2">📋 Gut vorbereitet</h4>
-              <p className="text-slate-600 text-sm">
-                Wissen Sie genau, was Sie mitnehmen dürfen und was nicht.
-              </p>
+            <div className="flex items-start space-x-4">
+              <div className="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <CheckCircle className="w-5 h-5 text-amber-600" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-800 mb-2">Gut vorbereitet</h4>
+                <p className="text-slate-600 text-sm">
+                  Wissen Sie genau, was Sie mitnehmen dürfen und was nicht.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
 import { Plane, Shield, Clock, Users, ShoppingBag } from 'lucide-react';
+import LanguageSwitcher, { useTranslation } from './LanguageSwitcher';
 
 export default function Layout({ children, currentPageName }) {
+  const { t, currentLanguage } = useTranslation();
+  
   useEffect(() => {
-    document.documentElement.lang = 'de';
-    document.title = 'Handgepäck Prüfer | Gepäckbestimmungen aller Airlines prüfen';
+    document.documentElement.lang = currentLanguage;
+    document.title = t('seo.title');
 
     // Remove old meta tags to prevent duplicates on navigation
     document.querySelector('meta[name="description"]')?.remove();
@@ -13,26 +16,61 @@ export default function Layout({ children, currentPageName }) {
 
     const description = document.createElement('meta');
     description.name = 'description';
-    description.content = 'Handgepäck Prüfer ist ein kostenloses Tool zur Überprüfung von Gepäckbestimmungen aller Airlines. Vermeiden Sie Überraschungen am Flughafen und reisen Sie sorgenfrei.';
+    description.content = t('seo.description');
     document.head.appendChild(description);
 
     const keywords = document.createElement('meta');
     keywords.name = 'keywords';
-    keywords.content = 'Handgepäck Prüfer, Gepäckbestimmungen, Koffergröße, Gepäckgewicht, Airlines, Fluggesellschaft, Handgepäck, Reisegepäck, Lufthansa, Emirates, Ryanair';
+    keywords.content = t('seo.keywords');
     document.head.appendChild(keywords);
 
     const schema = document.createElement('script');
     schema.type = 'application/ld+json';
-    schema.innerHTML = JSON.stringify({
+    schema.textContent = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Handgepäck Prüfer",
+      "name": t('seo.title'),
       "url": window.location.origin,
+      "description": t('seo.description'),
+      "inLanguage": currentLanguage,
       "potentialAction": {
         "@type": "SearchAction",
         "target": `${window.location.origin}/?airline={search_term_string}`,
         "query-input": "required name=search_term_string"
-      }
+      },
+      "mainEntity": {
+        "@type": "WebApplication",
+        "name": t('seo.title'),
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": t('seo.title'),
+        "url": window.location.origin
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Hand Luggage",
+          "description": "Airline hand luggage size and weight restrictions"
+        },
+        {
+          "@type": "Thing",
+          "name": "Checked Baggage",
+          "description": "Airline checked baggage policies and fees"
+        },
+        {
+          "@type": "Thing",
+          "name": "Travel Tips",
+          "description": "Budget travel advice and packing tips"
+        }
+      ]
     });
     document.head.appendChild(schema);
 
@@ -42,7 +80,7 @@ export default function Layout({ children, currentPageName }) {
       keywords.remove();
       schema.remove();
     };
-  }, [currentPageName]);
+  }, [currentPageName, currentLanguage]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-sky-50">
@@ -103,24 +141,25 @@ export default function Layout({ children, currentPageName }) {
                 <ShoppingBag className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold gradient-text">Handgepäck Prüfer</h1>
-                <p className="text-xs text-gray-600">Gepäckbestimmungen prüfen</p>
+                <h1 className="text-xl font-bold gradient-text">{t('hero.title')}</h1>
+                <p className="text-xs text-gray-600">{currentLanguage === 'de' ? 'Gepäckbestimmungen prüfen' : 'Check baggage policies'}</p>
               </div>
             </div>
 
             <nav className="hidden md:flex items-center space-x-8">
               <div className="flex items-center space-x-2 text-sm text-gray-700">
                 <Shield className="w-4 h-4 text-green-500" />
-                <span>Zuverlässige Daten</span>
+                <span>{currentLanguage === 'de' ? 'Zuverlässige Daten' : 'Reliable Data'}</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-700">
                 <Clock className="w-4 h-4 text-blue-500" />
-                <span>Immer aktuell</span>
+                <span>{currentLanguage === 'de' ? 'Immer aktuell' : 'Always Updated'}</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-700">
                 <Users className="w-4 h-4 text-purple-500" />
                 <span>100+ Airlines</span>
               </div>
+              <LanguageSwitcher />
             </nav>
           </div>
         </div>
